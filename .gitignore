@@ -1,0 +1,5 @@
+out/
+.idea/
+*.iws
+target/
+src/main/java/video_lectures*
