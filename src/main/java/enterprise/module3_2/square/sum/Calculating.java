@@ -3,7 +3,7 @@ package enterprise.module3_2.square.sum;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Phaser;
 
-public class Calculating implements Callable<Long> {
+class Calculating implements Callable<Long> {
     private final int[] values;
     private final int numberOfThreads;
     private final Phaser phaser;
@@ -35,7 +35,7 @@ public class Calculating implements Callable<Long> {
         return squareSum;
     }
 
-    private long computeSquares() {
+    long computeSquares() {
         long squaresSum = 0;
         int firstIndex = partOfArray * (values.length / numberOfThreads);
         int lastIndex;
