@@ -9,7 +9,7 @@ public class PhaserImpl implements SquareSum {
     @Override
     public long getSquareSum(int[] values, int numberOfThreads) {
         long result = 0;
-        Phaser phaser = new Phaser;
+        Phaser phaser = new Phaser();
         ExecutorService executor = Executors.newFixedThreadPool(numberOfThreads);
         List<Future<Long>> sum = new ArrayList<>();
 
